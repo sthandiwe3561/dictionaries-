@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import Meaning from "./meaning";
+import Noun from "./noun";
+import Synonyms from "./synonyms";
 import axios from "axios";
 
 export default function Search() {
@@ -48,6 +51,17 @@ export default function Search() {
           <h1>{data.word}</h1>
           <p>{data.phonetic}</p>
         </section>
+        <div className="meaning">
+          {" "}
+          <Meaning word={data} />
+        </div>
+        <div>
+          <Noun name={data} />
+        </div>
+        <div className="synonyms">
+          {" "}
+          <Synonyms words={data} />
+        </div>
       </div>
     );
   } else {
