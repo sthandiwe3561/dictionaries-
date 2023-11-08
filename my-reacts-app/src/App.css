@@ -1,3 +1,31 @@
+small {
+  margin-left: 39px;
+  font-size: 17px;
+}
+body {
+  background-color: #f9f7fe;
+}
+h1 {
+  margin-left: 30px;
+}
+
+p {
+  margin-left: 30px;
+}
+form {
+  margin-top: 20px;
+}
+label {
+  font-size: 30px;
+  font-weight: 700;
+}
+img {
+  width: 30%;
+}
+.photo {
+  border-radius: 6px;
+  margin: 10px 0;
+}
 .App {
   margin-top: 80px;
 }
@@ -62,25 +90,4 @@
   height: 20vh;
   margin-top: 20px;
   background-color: white;
-}
-small {
-  margin-left: 39px;
-  font-size: 17px;
-}
-body {
-  background-color: #f9f7fe;
-}
-h1 {
-  margin-left: 30px;
-}
-
-p {
-  margin-left: 30px;
-}
-form {
-  margin-top: 20px;
-}
-label {
-  font-size: 30px;
-  font-weight: 700;
 }

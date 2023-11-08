@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Meaning from "./meaning";
 import Noun from "./noun";
 import Synonyms from "./synonyms";
+import Images from "./images";
 import axios from "axios";
 
 export default function Search() {
@@ -25,9 +26,8 @@ export default function Search() {
   }
 
   function api() {
-    let apiKey = "eac360db5fc86ft86450f3693e73o43f";
-    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${word}&key=${apiKey}`;
-    axios.get(apiUrl).then(url);
+    let api = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
+    axios.get(api).then(url);
   }
 
   if (load === true) {
@@ -48,8 +48,8 @@ export default function Search() {
           <small className="hint">i.e. paris, wine, yoga, coding</small>
         </div>
         <section className="word">
-          <h1>{data.word}</h1>
-          <p>{data.phonetic}</p>
+          <h1>{data[0].word}</h1>
+          <p>{data[0].phonetic}</p>
         </section>
         <div className="meaning">
           {" "}
@@ -61,6 +61,9 @@ export default function Search() {
         <div className="synonyms">
           {" "}
           <Synonyms words={data} />
+        </div>
+        <div>
+          <Images image={data} />
         </div>
       </div>
     );
