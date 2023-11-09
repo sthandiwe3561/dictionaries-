@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Meaning from "./meaning";
 import Noun from "./noun";
-import Synonyms from "./synonyms";
-import Images from "./images";
+import Antonyms from "./antonyms";
 import axios from "axios";
 
 export default function Search() {
@@ -58,12 +57,8 @@ export default function Search() {
         <div>
           <Noun name={data} />
         </div>
-        <div className="synonyms">
-          {" "}
-          <Synonyms words={data} />
-        </div>
         <div>
-          <Images image={data} />
+          <Antonyms light={data} />
         </div>
       </div>
     );
