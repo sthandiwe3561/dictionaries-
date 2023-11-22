@@ -36,6 +36,12 @@ img {
   margin-top: 80px;
 }
 
+.paragraph {
+  font-size: 20px;
+  margin-top: 15px;
+  text-align: center;
+}
+
 .search {
   border-radius: 9px;
   border: 1px solid black;
