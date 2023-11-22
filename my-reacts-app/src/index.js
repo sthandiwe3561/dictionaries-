@@ -12,9 +12,7 @@ root.render(
       This project was coded by, <a href="/">Sthandiwe Msweli</a> and is{" "}
       <a href="https://github.com/sthandiwe3561/dictionaries-">
         Open-source code
-      </a>{" "}
-      and{" "}
-      <a href="https://gentle-medovik-598532.netlify.app/">hosted on Netlify</a>
+      </a>
     </div>
   </React.StrictMode>
 );
