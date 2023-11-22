@@ -108,21 +108,24 @@ img {
 }
 
 @media (max-width: 900px) {
-  .input {
-    width: 80%;
-    padding: 12px 25px;
-    font-size: 16px;
-  }
   label {
     font-size: 16px;
   }
   small {
     font-size: 12px;
   }
+  p {
+    font-size: 13px;
+  }
   .search {
     height: 24vh;
   }
-  p {
-    font-size: 13px;
+  .input {
+    width: 80%;
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+  .paragraph {
+    font-size: 10px;
   }
 }

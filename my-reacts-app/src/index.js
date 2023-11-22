@@ -10,7 +10,7 @@ root.render(
     <App />
     <div className="paragraph">
       This project was coded by, <a href="/">Sthandiwe Msweli</a> and is{" "}
-      <a href="https://github.com/sthandiwe3561/weather-app">
+      <a href="https://github.com/sthandiwe3561/dictionaries-">
         Open-source code
       </a>{" "}
       and{" "}
